@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-UK">
+<html lang="fr-FR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The official website of Nine Casino ⚡ The best online casino in the UK. Play 5000+ games for real money. No deposit bonus of £450 and 250 free spins."
+      content="Bruno Casino en ligne site officiel ⚡ Connexion et avis des joueurs français. Bonus sans dépôt 450 EUR et 250 tours gratuits. VIP club, 5000+ jeux d'argent."
     />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-    <title>BrunoCasino - Online Casino, Sports Betting and Odds</title>
+    <title>Bruno Casino France ❤️ Bonus €450 et 250 tours gratuits</title>
     <style type="text/css">
       *,
       ::after,
@@ -211,6 +211,77 @@
         font-weight: 400;
         color: #d0d2d7;
       }
+      .language__wrapp {
+        position: relative;
+        min-width: 73px;
+      }
+      .language__btn {
+        display: inline-flex;
+        min-width: 150px;
+        justify-content: center;
+        position: relative;
+        margin: 10px auto;
+        cursor: pointer;
+        padding: 10px 24px;
+        border-radius: 8px;
+        background-color: #0e265c;
+        box-shadow: inset 0 0 0 2px #51558c;
+      }
+      .language__btn::after,
+      .language__btn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 1.5px;
+        background-color: #fff;
+      }
+      .language__btn::after {
+        transform: rotate(45deg);
+        right: 25px;
+      }
+      .language__btn::before {
+        transform: rotate(-45deg);
+        right: 17px;
+      }
+      .language__list {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 1;
+        list-style: none;
+        padding: 8px;
+        margin: 0;
+        backdrop-filter: blur(5px);
+        min-width: 150px;
+        max-height: 105px;
+        overflow-y: scroll;
+        -ms-overflow-style: none; /* IE и Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .language__list-item {
+        margin-bottom: 10px;
+        padding: 10px 24px;
+        border-radius: 8px;
+        background-color: #0e265c;
+        box-shadow: inset 0 0 0 2px #51558c;
+        text-align: center;
+      }
+      .language__list-item:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .language__list-link {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+      }
+      .language__wrapp input:checked ~ .language__list {
+        display: block;
+      }
       .logo {
         z-index: 11;
       }
@@ -238,6 +309,7 @@
       .registration {
         background-color: #1cc68d;
         box-shadow: inset 0 0 0 2px #1cc68d;
+        color: #000;
       }
       .registration:hover {
         background-color: #49d1a4;
@@ -270,7 +342,7 @@
         padding: 14px 74px;
         transition: all 0.5s;
         background-color: #1cc68d;
-        color: #fff;
+        color: #000;
         font-size: 18px;
         border-radius: 1000px;
         border: none;
@@ -310,6 +382,7 @@
       }
       .more-games {
         background-color: #1cc68d;
+        color: #000;
         font-size: 14px;
         font-weight: 600;
         line-height: 16px;
@@ -391,6 +464,39 @@
         opacity: 0.5;
         color: #fff;
         font-weight: 400;
+      }
+      .table__wrap {
+        overflow-x: auto;
+      }
+      table:not([class]) {
+        border-collapse: collapse;
+        width: 70%;
+        margin: 16px auto 0;
+      }
+      table:not([class]) th {
+        background: #222d56;
+        color: #fff;
+        text-shadow: 0 1px 1px #2d2020;
+      }
+      table:not([class]) th:first-child {
+        border-top-left-radius: 10px;
+      }
+      table:not([class]) th:last-child {
+        border-top-right-radius: 10px;
+        border-right: none;
+      }
+      table:not([class]) tr td:last-child {
+        border-right: none;
+      }
+      table:not([class]) td,
+      table:not([class]) th {
+        border-style: solid;
+        border-width: 0 1px 1px 0;
+        border-color: rgba(110, 88, 131, 0.3);
+        text-align: center;
+        padding: 1rem;
+        vertical-align: middle;
+        min-width: 140px;
       }
       .questions__item {
         position: relative;
@@ -545,7 +651,7 @@
           margin-bottom: 20px;
         }
         .header__inner {
-          padding-left: 50px;
+          padding-left: 45px;
         }
         .logo__img {
           width: 122px;
@@ -579,7 +685,7 @@
           background-color: #1cc68d;
         }
         .main {
-          padding: 200px 8px 0px;
+          padding: 200px 8px 30px;
           background-image: url('images/main-img-320.webp');
         }
         .main__text {
@@ -596,6 +702,9 @@
         }
         .popular {
           grid-template-columns: repeat(2, 1fr);
+        }
+        table:not([class]) {
+          width: 100%;
         }
         .more-games {
           width: 150px;
@@ -622,9 +731,12 @@
           padding: 5px 30px;
         }
       }
-      @media (max-width: 370px) {
+      @media (max-width: 380px) {
         .header__btn-box {
           display: none;
+        }
+        .main__btn {
+          padding: 14px 45px;
         }
       }
     </style>
@@ -636,8 +748,8 @@
         <label class="menu-burger__label" for="burger"><span></span></label>
         <nav class="menu">
           <div class="btn-box btn-box--mobile">
-            <a class="btn__link--mobile log-in--mobile" href="go">Log in</a>
-            <a class="btn__link--mobile registration--mobile" href="go">Sign up</a>
+            <a class="btn__link--mobile log-in--mobile" href="go">Connexion</a>
+            <a class="btn__link--mobile registration--mobile" href="go">S'inscrire</a>
           </div>
           <p class="menu__title">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -664,7 +776,7 @@
                   fill="#d0d2d7"
                 ></path>
               </svg>
-              <a class="menu__link" href="go">Live Casino</a>
+              <a class="menu__link" href="go">Casino en direct</a>
             </li>
             <li class="menu__item">
               <svg viewBox="0 0 24 25" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -673,7 +785,7 @@
                   fill="#d0d2d7"
                 ></path>
               </svg>
-              <a class="menu__link" href="go">Top Games</a>
+              <a class="menu__link" href="go">Les meilleurs jeux</a>
             </li>
             <li class="menu__item">
               <svg viewBox="0 0 24 24" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -706,7 +818,7 @@
                   fill="#d0d2d7"
                 ></path>
               </svg>
-              <a class="menu__link" href="go">Slots</a>
+              <a class="menu__link" href="go">Machines à sous</a>
             </li>
             <li class="menu__item">
               <svg viewBox="0 0 24 25" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -726,7 +838,7 @@
                   fill="#d0d2d7"
                 ></path>
               </svg>
-              <a class="menu__link" href="go">Books</a>
+              <a class="menu__link" href="go">Livres</a>
             </li>
             <li class="menu__item">
               <svg viewBox="0 0 24 25" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -752,7 +864,7 @@
                   fill="#d0d2d7"
                 ></path>
               </svg>
-              <a class="menu__link" href="go">Table</a>
+              <a class="menu__link" href="go">Jeux de table</a>
             </li>
           </ul>
           <p class="menu__title">
@@ -762,7 +874,7 @@
                 fill="#d0d2d7"
               ></path>
             </svg>
-            Sports
+            Sport
           </p>
           <ul class="menu__list">
             <li class="menu__item">
@@ -790,7 +902,7 @@
                   fill="#d0d2d7"
                 ></path>
               </svg>
-              <a class="menu__link" href="go">Live Sports</a>
+              <a class="menu__link" href="go">Sports en direct</a>
             </li>
             <li class="menu__item">
               <svg viewBox="0 0 24 24" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -799,40 +911,57 @@
                   fill="#d0d2d7"
                 ></path>
               </svg>
-              <a class="menu__link" href="go">Sports Results</a>
+              <a class="menu__link" href="go">Résultats sportifs</a>
             </li>
           </ul>
+          <div class="language__wrapp">
+            <input type="checkbox" id="toggle" hidden />
+            <label for="toggle" class="language__btn footer__top-link">FR</label>
+            <ul class="language__list">
+              <li class="language__list-item">
+                <a class="language__list-link" href="https://bruno-casino.fr">FR</a>
+              </li>
+              <li class="language__list-item">
+                <a class="language__list-link" href="https://bruno-casino.de">DE</a>
+              </li>
+              <li class="language__list-item">
+                <a class="language__list-link" href="https://brunocasino.gr">GR</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <a class="logo" href="https://bruno-casino.fr">
           <img class="logo__img" src="images/logo-main.svg" alt="logo" width="143" height="29" />
         </a>
         <div class="btn-box header__btn-box">
-          <a class="btn__link log-in" href="go">Log in</a>
-          <a class="btn__link registration" href="go">Sign up</a>
+          <a class="btn__link log-in" href="go">Connexion</a>
+          <a class="btn__link registration" href="go">S'inscrire</a>
         </div>
       </div>
     </header>
     <section class="content">
       <div class="main">
-        <p class="main__text">WELCOME PACKAGE</p>
-        <p class="main__text main__text-title">450£</p>
-        <p class="main__text main__text--yelov">+ 250 Free Spins</p>
-        <a class="main__btn" href="go">Sign up now</a>
+        <p class="main__text">PACK DE BIENVENUE</p>
+        <p class="main__text main__text-title">€450</p>
+        <p class="main__text main__text--yelov">+ 250 Tours Gratuits</p>
+        <a class="main__btn" href="go">Inscrivez-vous maintenant</a>
       </div>
     </section>
     <section class="content">
       <div class="container">
         <div class="content__inner">
-          <h1>Nine Casino official website in the UK 🇬🇧</h1>
+          <h1>Bruno Casino France 🇫🇷</h1>
           <p>
-            Nine Casino is a modern, dynamically developing online casino that is very popular among players. Nine Casino has a
-            huge selection of games for every taste: excellent new and popular slot machines, a set of games with jackpots, table
-            games, live casino and much more.
+            Bruno Casino a ouvert ses portes en 2021 et a rapidement gagné en popularité grâce à la diversité de ses jeux et à sa
+            facilité d'utilisation. Le casino propose plus de 6 000 jeux, incluant des machines à sous, des jeux de table, des
+            jackpots et des jeux en direct avec des croupiers. Cette vaste sélection permet à chaque joueur de trouver le
+            divertissement qui lui convient, quels que soient ses goûts.
           </p>
           <p>
-            Games from leading developers with good features provide players with a return percentage above 95%. This is very
-            popular with the players and allows them to spend time with pleasure. A generous welcome bonus, daily free spins,
-            monthly promotions were positively evaluated by many users.
+            La plateforme est orientée vers les utilisateurs internationaux, prenant en charge diverses méthodes de paiement et
+            plusieurs devises. Bruno Casino opère selon des normes strictes de sécurité, garantissant la protection des données et
+            la transparence des transactions grâce au chiffrement SSL. Cette approche en fait un choix fiable aussi bien pour les
+            nouveaux joueurs que pour les habitués.
           </p>
         </div>
       </div>
@@ -840,7 +969,7 @@
     <section class="content">
       <div class="container">
         <div class="content__inner">
-          <h2>POPULAR GAMES</h2>
+          <h2>JEUX POPULAIRES</h2>
           <div class="popular">
             <div class="popular__item">
               <a class="popular__link" href="go">
@@ -939,7 +1068,7 @@
               </a>
             </div>
           </div>
-          <a class="more-games" href="go">All games</a>
+          <a class="more-games" href="go">Tous les jeux</a>
         </div>
       </div>
     </section>
@@ -948,44 +1077,53 @@
         <div class="content__inner">
           <div class="spoiler">
             <input class="spoiler__input" type="checkbox" id="content" />
-            <label class="spoiler__label" for="content">Content</label>
+            <label class="spoiler__label" for="content">Contenu</label>
             <div class="spoiler__content">
               <ol class="spoiler__list">
                 <li class="spoiler__list-item">
-                  <a href="#Is-Nine-Casino-safe-and-reliable?">Is Nine Casino safe and reliable?</a>
+                  <a href="#Bruno-Casino-en-ligne-est-il-fiable?">Bruno Casino en ligne est-il fiable?</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Licenses-and-regulation-of-Nine-Casino">Licenses and regulation of Nine Casino</a>
+                  <a href="#Licences-du-Bruno-Casino">Licences du Bruno Casino</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Website-and-mobile-App">Website and mobile App</a>
+                  <a href="#Bruno-Casino-connexion-et-inscription">Bruno Casino connexion et inscription</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Registration-and-login-to-Nine-Casino">Registration and login to Nine Casino</a>
+                  <a href="#Avantages-et-inconvénients-de-Bruno-Casino">Avantages et inconvénients de Bruno Casino</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Deposit-and-withdrawal-methods">Deposit and withdrawal methods</a>
+                  <a href="#Bonus-et-promotions">Bonus et promotions</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Nine-Casino-Games">Nine Casino Games</a>
+                  <a href="#Bonus-de-bienvenue">Bonus de bienvenue 450€ + 250 FS</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Promotions-and-bonuses">Promotions and bonuses</a>
+                  <a href="#Jeu-gratuit-avec-Casino-Bruno">Jeu gratuit avec Casino Bruno</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Customer-Support">Customer Support</a>
+                  <a href="#Jouer-au-Bruno-Casino-pour-de-l'argent-réel">Jouer au Bruno Casino pour de l'argent réel</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Advantages-and-disadvantages-of-Nine-Casino">Advantages and disadvantages of Nine Casino</a>
+                  <a href="#Application-de-Bruno-Casino">Application de Bruno Casino</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Responsible-game">Responsible game</a>
+                  <a href="#Méthodes-de-dépôt">Méthodes de dépôt</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Questions-and-answers">Questions and answers</a>
+                  <a href="#Méthodes-de-paiement">Méthodes de paiement</a>
                 </li>
                 <li class="spoiler__list-item">
-                  <a href="#Reviews">Reviews</a>
+                  <a href="#Soutien-à-la-clientèle">Soutien à la clientèle</a>
+                </li>
+                <li class="spoiler__list-item">
+                  <a href="#Jeu-responsable">Jeu responsable</a>
+                </li>
+                <li class="spoiler__list-item">
+                  <a href="#Vaut-il-la-peine-de-jouer-bruno-casino">Vaut-il la peine de jouer Bruno Casino ?</a>
+                </li>
+                <li class="spoiler__list-item">
+                  <a href="#Questions-fréquemment-posées">Questions fréquemment posées</a>
                 </li>
               </ol>
             </div>
@@ -996,139 +1134,173 @@
     <section class="content">
       <div class="container">
         <div class="content__inner">
-          <h2 id="Is-Nine-Casino-safe-and-reliable?">Is Nine Casino safe and reliable?</h2>
+          <h2 id="Bruno-Casino-en-ligne-est-il-fiable?">Bruno Casino en ligne est-il fiable?</h2>
           <p>
-            Security, confidentiality, honesty of the game and guarantees of the payout of winnings are very important for every
-            online casino player. NineCasino pays great attention to the protection of personal and financial data of its
-            customers. To do this, the casino uses the most modern technologies and encryption protocols. All player information
-            is transmitted in encrypted form and is not stored on the server.
+            Le club de jeu garantit la confidentialité des données des clients. La dernière technologie de cryptage SSL est
+            utilisée pour protéger les informations personnelles et les transactions financières des joueurs. La société ne
+            transmet aucune information à des tiers. Les seules exceptions sont celles prévues par la loi.
           </p>
           <p>
-            The casino uses only certified software from the world's best developers, which ensures 100% randomness of winning.
-            This ensures that the game is fair and everyone has an equal chance of winning. Nine Casino is regularly checked for
-            compliance with all standards and is an honest and reliable online casino with a good reputation.
-          </p>
-          <h2 id="Licenses-and-regulation-of-Nine-Casino">Licenses and regulation of Nine Casino</h2>
-          <p>
-            Nine Casino is managed by the Cyprus company Scartesu Limited, which is a subsidiary of Dux Group NV located in Malta.
-            This company has extensive experience and a good reputation in the field of gambling. NineCasino has license no.
-            B2C-AK2QPM3H- 668JAZ, which is issued by Curacao eGaming (Netherlands). This ensures that the casino complies with all
-            international rules and standards in the field of gaming. Each player can be sure of his safety, transparency of the
-            game and the honesty of winning.
-          </p>
-          <h2 id="Website-and-mobile-App">Website and mobile App</h2>
-          <p>
-            The Nine Casino website is well designed, has a concise design and a simple intuitive interface. The site is not
-            overloaded with distracting ads, it has a convenient search by categories and providers. All sections and blocks are
-            located on the main page, so even a beginner can easily navigate. At the bottom of the page, all possible payment and
-            withdrawal methods are immediately visible.
+            Tous les jeux de Bruno Casino sont originaux. Il n'y a aucun doute sur l'équité des jeux - le logiciel est
+            régulièrement testé par des experts de laboratoires indépendants. L'offre comprend les meilleurs produits de
+            développeurs de logiciels de renommée mondiale: Betsoft, Igrosoft, Pragmatic Play, Play'n'Go et d'autres fournisseurs.
           </p>
           <p>
-            The site is optimized for various mobile devices and desktop computers, quickly adapts to the size of any gadget. The
-            mobile version of the site is full-fledged, supports all the functions of the main site and loads quickly. It is
-            convenient and allows you to play anywhere without restrictions.
+            Pour vérifier la qualité du service, il est suggéré d'utiliser l'un des moyens les plus corrects - contacter l'équipe
+            d'assistance. Ensuite, vous devez faire attention au temps de réponse des spécialistes. Nous sommes sûrs que cela ne
+            prendra que quelques minutes.
           </p>
-          <h2 id="Registration-and-login-to-Nine-Casino">Registration and login to Nine Casino</h2>
+          <h2 id="Licences-du-Bruno-Casino">Licences du Bruno Casino</h2>
           <p>
-            Registering with Nine Casino is very simple and can be done in a few minutes. To do this, click the “Register” button,
-            which is located in the upper right corner and fill in several fields: email address, select a country, come up with a
-            password, agree to the terms and conditions of the casino by checking the box. Then click the “Register" button.
+            Selon la loi française, il n'est pas possible d'exploiter un établissement de jeu en France sans une licence
+            appropriée. Bruno Casino fr fournit des services juridiques. La licence d'exploitation est délivrée par Curaçao. En
+            cas de doute, vous pouvez consulter la licence sur le site Web du régulateur.
           </p>
           <p>
-            After registration, the player gets access to his account, where it is necessary to specify the name, surname,
-            address, phone number and email. After creating an account, you can immediately start playing. Identification of the
-            person will be carried out at the first withdrawal of money. The casino will request a photo ID and confirmation of
-            the right to the account to which the money will be withdrawn in order to avoid fraud.
+            Le club virtuel répond non seulement à toutes les exigences du régulateur, mais adhère également strictement à toutes
+            les directives de l'Autorité nationale des jeux de hasard - ANJ. En particulier, il prend un certain nombre de mesures
+            pour prévenir la propagation de la dépendance au jeu chez les joueurs locaux.
           </p>
-          <h2 id="Deposit-and-withdrawal-methods">Deposit and withdrawal methods</h2>
+          <h2 id="Bruno-Casino-connexion-et-inscription">Bruno Casino connexion et inscription</h2>
           <p>
-            After registration, the player can top up his account. NineCasino offers many popular payment systems for depositing
-            and withdrawing funds, which allows users to easily manage their account. Ways to deposit and withdraw money:
+            Afin d'accéder pleinement aux services du gaming club, les utilisateurs doivent créer et activer un compte. Seuls les
+            joueurs adultes sont autorisés à participer à la procédure. Pour effectuer l'inscription sur Bruno casino, suivez les
+            instructions:
           </p>
           <ul>
-            <li>Online banking;</li>
-            <li>Bank cards: Visa, MasterCard;</li>
-            <li>Payment systems: Neteller, Jeton, Mifinity, eZeeWallet, AstroPay, Skrill;</li>
-            <li>Cryptocurrencies: from Bitcoin, Litecoin, Ethereum and others.</li>
+            <li>Ouvrez le site officiel de l'institution.</li>
+            <li>Cliquez sur le bouton "Inscription" - situé sur le côté gauche de la page d'accueil.</li>
+            <li>
+              Confirmez vos entrées en cliquant sur "Continuer". Le système vous guidera automatiquement vers l'étape suivante.
+            </li>
+            <li>
+              Dans le formulaire qui apparaît, vous devez renseigner vos coordonnées personnelles: nom et prénom, date et lieu de
+              naissance, nationalité, adresse de votre lieu de résidence réel, numéro de téléphone.
+            </li>
+            <li>Cochez les cases au bas du formulaire et acceptez les règles du casino sous licence.</li>
+            <li>Cliquez sur le bouton" S'inscrire".</li>
           </ul>
           <p>
-            We pay special attention that the player can use only those payment methods that are registered in his name, since
-            when withdrawing money, the casino will ask the client to confirm this.
+            La dernière étape de la procédure est l'activation du compte. Pour ce faire, suivez le lien joint à la lettre du club
+            de jeu. Ensuite, vous pouvez procéder à la vérification de votre compte et déposer de l'argent. L'accès ultérieur à
+            l'armoire personnelle se fait en saisissant le nom d'utilisateur et le mot de passe indiqués lors de l'inscription.
+          </p>
+          <h2 id="Avantages-et-inconvénients-de-Bruno-Casino">Avantages et inconvénients de Bruno Casino</h2>
+          <p>
+            L'institution en ligne présente à la fois des avantages et des inconvénients. Les plus importants d'entre eux sont
+            répertoriés dans le tableau:
+          </p>
+          <table>
+            <tr>
+              <th>Avantages</th>
+              <th>Inconvénients</th>
+            </tr>
+            <tr>
+              <td>Interface soigneusement conçue et conviviale</td>
+              <td>Pas d'application mobile</td>
+            </tr>
+            <tr>
+              <td>Logiciels de haute qualité de fournisseurs renommés</td>
+              <td>Conception visuelle conservatrice</td>
+            </tr>
+            <tr>
+              <td>Système de bonus généreux</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tournois et promotions réguliers</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Paiements rapides</td>
+              <td></td>
+            </tr>
+          </table>
+          <h2 id="Bonus-et-promotions">Bonus et promotions</h2>
+          <p>
+            Le club de jeu propose aux utilisateurs un large éventail d'offres de bonus. Des cadeaux sont offerts à la fois aux
+            nouveaux arrivants et aux clients réguliers de l'institution en ligne. Pour obtenir des bonus sur Bruno Casino, vous
+            devez remplir deux conditions : vous inscrire et effectuer un dépôt. Aucun bonus sans dépôt n'est accordé.
           </p>
           <p>
-            The money is received instantly and the deposit fee is not charged. The site has a unique withdrawal system that
-            allows you to receive winnings within one day, with the exception of a bank transfer, where processing the request
-            takes 5-7 days.
+            Malgré l'attractivité du bonus, il faut tenir compte du fait qu'il devra être misé. Nous vous recommandons de lire les
+            termes et conditions avant d'activer le bonus. Une attention particulière doit être portée au montant de la mise, à la
+            période de validité et à l'étendue de l'offre de bonus. N'oubliez pas que les bonus ne sont qu'une astuce marketing
+            astucieuse pour attirer de nouveaux arrivants et motiver les clients réguliers!
           </p>
-          <h2 id="Nine-Casino-Games">Nine Casino Games</h2>
+          <h2 id="Bonus-de-bienvenue">Bonus de bienvenue 450€ + 250 FS</h2>
           <p>
-            Before playing for money, Nine Casino offers to play many games for free. This is a great opportunity to get
-            acquainted with various games, choose the most interesting ones, develop your tactics and strategy, have fun without
-            risking money. This is a good opportunity for new players to get acquainted with the online casino and the collection
-            of games.
+            L'institution en ligne propose une offre spéciale pour les nouveaux arrivants - un pack de bienvenue avec trois bonus.
+            Dans le cadre de la promotion, les joueurs peuvent accéder à:
           </p>
-          <p>For players who want to play for real money, NineCasino offers a wide variety of games:</p>
           <ul>
             <li>
-              <b>Slots.</b> Here are modern gaming machines from the world's best manufacturers. Many slot machines have a feature
-              that allows the player to try their luck in bonus rounds and risk rounds. A separate section offers games with a
-              jackpot and an increased jackpot.
+              Bonus de 100% sur le premier dépôt jusqu'à 100 EUR, ainsi que 250 tours gratuits. Le montant minimum du dépôt doit
+              être de 20 EUR.
             </li>
             <li>
-              <b>Table games.</b> It contains all the most popular card games, such as blackjack, baccarat, various types of
-              poker, roulette and popular lotteries.
+              Bonus de 55% sur le deuxième dépôt. Pour obtenir le bonus, vous devez effectuer un dépôt minimum de 20 EUR. La
+              limite du montant du bonus est de EUR 100.
             </li>
-            <li>
-              <b>Live casino.</b> Here you can feel the atmosphere of a land-based casino, the games take place in real time with
-              a live dealer. You can play in a live casino only after registering and making your first deposit.
-            </li>
+            <li>100% du dépôt jusqu'à 100 EUR, pour un troisième dépôt de 20 EUR ou plus.</li>
           </ul>
-          <h2 id="Promotions-and-bonuses">Promotions and bonuses</h2>
           <p>
-            Nine Casino offers its customers a generous welcome bonus consisting of 3 parts, free spins, lots of promotions and
-            lotteries, daily cashback. Both new players and regular customers can participate in all promotions and tournaments.
-            All this brings additional sensations and chances of winning to the game, improves the gaming experience.
+            Gardez à l'esprit que les deux derniers bonus à brunocasino.com, qui font partie de la trousse de bienvenue, ont une
+            date d'expiration de seulement 24 heures. Les détails de l'offre peuvent être trouvés dans la section correspondante
+            sur le site Web du club virtuel.
+          </p>
+          <h2 id="Jeu-gratuit-avec-Casino-Bruno">Jeu gratuit avec Casino Bruno</h2>
+          <p>
+            Tl'établissement de jeu propose deux modes de jeu: démo et standard. Dans le premier cas, il est proposé de jouer
+            gratuitement au Bruno Casino sans inscription. La version d'essai est disponible dans presque toute la collection de
+            machines à sous. Il ne diffère pas de la version standard en termes de fonctions, de structure et de conception. Les
+            crédits virtuels sont automatiquement crédités sur le compte du joueur afin de maîtriser la fonctionnalité. Si le
+            solde est nul, il suffit de rafraîchir la page et elle sera réapprovisionnée.
           </p>
           <p>
-            All information about bonuses and promotions can be found in the “Promotions” section on the main page of the casino.
-            Before receiving bonuses and participating in promotions, carefully study all the conditions for their provision. If
-            you have any questions, please consult the support service.
-          </p>
-          <h2 id="Customer-Support">Customer Support</h2>
-          <p>
-            Nine Casino support service is available around the clock seven days a week. The service operators react quickly and
-            professionally, friendly and patiently solve all the problems that players have. The following types of communication
-            are available:
-          </p>
-          <ul>
-            <li>Online chat is the fastest type of communication;</li>
-            <li>E-Mail.</li>
-          </ul>
-          <p>You can also find answers to many frequently asked questions on the site.</p>
-          <h2 id="Advantages-and-disadvantages-of-Nine-Casino">Advantages and disadvantages of Nine Casino</h2>
-          <p>
-            Nine Casino is a fun new generation online casino, with a wide selection of all kinds of slots from the most famous
-            manufacturers, with a variety of table games and live dealer games.
+            Le mode démo est destiné à des fins d'évaluation. En utilisant la version gratuite de la machine à sous, les joueurs
+            peuvent s'entraîner, explorer les possibilités de l'appareil, choisir une stratégie compétente. La version d'essai est
+            particulièrement pertinente pour se familiariser avec la nouvelle industrie du jeu, qui est régulièrement mise à jour
+            avec une collection de casinos en ligne.
           </p>
           <p>
-            The casino website is very convenient, without distracting ads, has simple navigation, which allows the client to
-            quickly find the right game. The site is fully optimized for any gadgets and desktop computers, which allows you to
-            play from any available device.
+            Jouer en mode gratuit permettait un nombre illimité de fois, mais il y a un inconvénient important - vous ne pouvez
+            pas retirer d'argent de la démo. Pour non seulement profiter du processus, mais aussi en tirer profit, vous devez
+            choisir de jouer pour de l'argent réel.
+          </p>
+          <h2 id="Jouer-au-Bruno-Casino-pour-de-l'argent-réel">Jouer au Bruno Casino pour de l'argent réel</h2>
+          <p>
+            Tl'offre des établissements de jeux comprend les meilleures machines à sous de l'industrie du jeu. Le site Web de
+            Bruno Casino propose des modèles avec différents thèmes, fonctionnalités et volatilité. Les joueurs trouveront à la
+            fois des machines à trois rouleaux rétro et des machines à sous ultra-modernes avec des graphismes époustouflants dans
+            le catalogue.
           </p>
           <p>
-            A generous welcome bonus, really profitable promotions and offers, quick withdrawal of money within 24 hours,
-            responsive support service are very attractive for many players.
+            Pour profiter pleinement des fonctionnalités des machines, vous devez choisir le modèle standard. L'accès à celui-ci
+            s'ouvre après une minute d'enregistrement de compte et de dépôt. De plus, après avoir déposé de l'argent, les
+            utilisateurs bénéficient de nombreuses fonctionnalités supplémentaires: bonus, mises à niveau du programme de
+            fidélité, offres personnalisées.
           </p>
           <p>
-            One of the disadvantages is the restriction for some countries and the insufficient number of types of communication
-            with the support service.
+            Outre les machines à sous, jouer pour de l'argent est proposé dans la catégorie divertissement en direct. Le mode
+            gratuit dans cette section n'est pas fourni. La collection de casino en direct offre la possibilité de jouer au
+            baccarat, à la roulette et au blackjack.
           </p>
           <p>
-            In general, NineCasino is a reliable and high-tech online gaming platform that gives you the opportunity to enjoy the
-            game, get a new gaming experience and have a good time. User reviews coincide with our opinion about the safety and
-            integrity of the casino.
+            Les sessions ont lieu dans des studios spécialement équipés des principaux prestataires. Ils sont diffusés à l'aide
+            d'une variété de caméras. Les jeux avec croupier en direct donnent aux joueurs la possibilité de vivre l'excitation
+            des casinos terrestres.
           </p>
-          <h2 id="Responsible-game">Responsible game</h2>
+          <h2 id="Application-de-Bruno-Casino">Application de Bruno Casino</h2>
+          <p>
+            À l'heure actuelle, le club de jeu n'a pas encore publié sa propre application mobile pour iOS et Android. Cependant,
+            selon l'administration de l'institution Internet, le programme devrait apparaître prochainement. Dans une telle
+            situation, la meilleure solution est d'utiliser la version mobile du site Web. Cela peut être ouvert directement dans
+            le navigateur d'un appareil portable de n'importe quelle taille d'écran. La ressource mobile est pratiquement la même
+            que la version complète. Les utilisateurs pourront jouer pour de l'argent et effectuer des transactions gratuites,
+            ainsi que participer à des tournois et des promotions.
+          </p>
+          <h2 id="Méthodes-de-dépôt">Méthodes de dépôt</h2>
           <p>
             Nine Casino takes the issue of responsible gaming very seriously and provides its customers with various tools to
             prevent the development of unhealthy gaming habits. There is an opportunity to take a test for addiction to gambling.
@@ -1136,125 +1308,278 @@
             game. There is an option of self-exclusion for up to a year, a useful resource for organizations that help in the
             fight against gambling addiction.
           </p>
+          <ol>
+            <li>Autorisez-vous sur le site avec votre identifiant et votre mot de passe Bruno Casino.</li>
+            <li>Allez dans l'onglet "Caissier" - "Dépôts".</li>
+            <li>Sélectionnez un mode de paiement dans la liste contextuelle, entrez les détails et le montant du paiement.</li>
+            <li>Confirmez la transaction en cliquant sur le bouton approprié.</li>
+          </ol>
+          <p>
+            L'argent sera immédiatement crédité sur votre compte de jeu. Le casino en ligne ne facture aucune commission pour la
+            transaction. Cependant, des frais supplémentaires peuvent être facturés par les banques ou les systèmes de paiement
+            effectuant la transaction.
+          </p>
+          <p>Le club en ligne offre aux joueurs un large éventail de façons de faire un dépôt:</p>
+          <div class="table__wrap">
+            <table>
+              <tr>
+                <th>Paiement</th>
+                <th>Min. dépôt</th>
+                <th>Devises</th>
+                <th>Temps</th>
+              </tr>
+              <tr>
+                <td>Visa/MasterCard</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>Interac</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>MuchBetter</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>Neteller</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>Volt</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>PaysafeCard</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>Instadebit</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>AstroPay</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>Skrill</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>Neosurf</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>AstroPay</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+              <tr>
+                <td>Sofort</td>
+                <td>20 EUR</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>instantanée</td>
+              </tr>
+            </table>
+          </div>
+          <h2 id="Méthodes-de-paiement">Méthodes de paiement</h2>
+          <p>
+            L'établissement de jeu traite les demandes de paiement 24 heures sur 24. La procédure elle-même s'effectue via
+            l'onglet "Caissier" de l'armoire personnelle. Les gains sont retirés en utilisant la même méthode que celle utilisée
+            pour déposer sur le compte. Au Bruno Casino, les retraits sont effectués via:
+          </p>
+          <div class="table__wrap">
+            <table>
+              <tr>
+                <th>Paiement</th>
+                <th>Min. retrait</th>
+                <th>Devises</th>
+                <th>Temps</th>
+              </tr>
+              <tr>
+                <td>Visa/MasterCard</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>Interac</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>MuchBetter</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>Neteller</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>Volt</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>PaysafeCard</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>Instadebit</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>AstroPay</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>Skrill</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>Neosurf</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>AstroPay</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+              <tr>
+                <td>Sofort</td>
+                <td>20€/15000€</td>
+                <td>EUR, CAD, NZD, CZK, ZAR, BGN, DKK, HRK, RON, AUD, BTC</td>
+                <td>Jusqu'à 1 heure</td>
+              </tr>
+            </table>
+          </div>
+          <h2 id="Soutien-à-la-clientèle">Soutien à la clientèle</h2>
+          <p>
+            Tout problème lié au fonctionnement du site de jeu peut être résolu via l'équipe d'assistance. Il n'y a qu'une seule
+            façon de les contacter - par e-mail. Décrivez brièvement la situation et envoyez-la à l'adresse:
+            support[at]brunocasino.com. Les utilisateurs ont également la possibilité de trouver une réponse à leur question dans
+            la rubrique "FAQ".
+          </p>
+          <h2 id="Jeu-responsable">Jeu responsable</h2>
+          <p>
+            Le casino en ligne de Bruno adhère strictement à une politique de jeu responsable. Différentes méthodes sont utilisées
+            pour prévenir le développement d'une dépendance au jeu: limites d'âge, mesures d'autocontrôle, bannières sociales.
+            S'il y a des signes de dépendance au jeu, des méthodes d'auto-limitation doivent être utilisées et des limites doivent
+            être fixées sur les montants des dépôts, les montants des paris et les heures de session.
+          </p>
+          <p>
+            Les joueurs ont également la possibilité de bloquer leur compte pendant une certaine période ou de manière permanente.
+            Pour ce faire, vous devez écrire une lettre à l'équipe d'assistance, décrivant brièvement la nature du problème. Si
+            les méthodes ci-dessus ne vous aident pas, vous devez immédiatement contacter les centres spécialisés pour obtenir de
+            l'aide. Vous pouvez trouver les logos des organisations internationales qui aident à lutter contre la triche dans le
+            pied de page du site Web du club en ligne. En cliquant sur l'icône du logo, vous accéderez à leur site Web.
+          </p>
+          <h2 id="Vaut-il-la-peine-de-jouer-bruno-casino">Vaut-il la peine de jouer Bruno Casino ?</h2>
+          <p>
+            Une évaluation approfondie du club en ligne a montré que Bruno casino est populaire parmi les joueurs pour une raison.
+            L'attention des utilisateurs est attirée par une bonne sélection de machines à sous, des offres de bonus
+            intéressantes, des gains garantis. Comme les joueurs l'écrivent dans leurs critiques, Bruno Casino est sûr et fiable.
+            Pour s'en assurer, chaque utilisateur a la possibilité d'étudier les opinions des joueurs sur des forums populaires.
+          </p>
         </div>
       </div>
     </section>
     <section class="content">
       <div class="container">
-        <div class="content__inner" id="Questions-and-answers">
-          <h2>Questions and answers</h2>
+        <div class="content__inner" id="Questions-fréquemment-posées">
+          <h2>Questions fréquemment posées</h2>
           <div class="questions__item">
             <input class="questions__input" type="checkbox" id="question-1" />
-            <label class="questions__label" for="question-1">What games can I play in Nine Casino?</label>
+            <label class="questions__label" for="question-1">
+              Quels jeux sont disponibles sur le casino en ligne Bruno Casino ?
+            </label>
             <div class="questions__content">
-              There are many games available in Nine Casino, including slots, blackjack, baccarat, various types of poker,
-              roulette and other games. In total, more than 5,000 different games from reliable manufacturers are offered.
+              Au Bruno Casino, vous trouverez une variété de divertissements de hasard : des machines à sous passionnantes et des
+              jeux de cartes classiques aux jeux de table captivants tels que la roulette et le blackjack. Nous proposons des jeux
+              pour tous les goûts, quel que soit votre niveau d'expérience.
             </div>
           </div>
           <div class="questions__item">
             <input class="questions__input" type="checkbox" id="question-2" />
-            <label class="questions__label" for="question-2">How can I start playing at an online casino?</label>
+            <label class="questions__label" for="question-2">
+              Comment la sécurité et l'équité des jeux sont-elles assurées sur le Bruno Casino ?
+            </label>
             <div class="questions__content">
-              To start playing NineCasino, you need to register on the casino's website, make a deposit to your gaming account and
-              choose a game. Many games can be played for free without making a deposit.
+              La sécurité et l'équité des jeux sont nos priorités. Le Bruno Casino utilise des technologies de cryptage de pointe
+              pour garantir la protection de vos informations personnelles. De plus, nos jeux sont vérifiés par des auditeurs
+              indépendants pour assurer l'équité et l'aléatoire des résultats, offrant ainsi un jeu équitable pour tous nos
+              joueurs.
             </div>
           </div>
           <div class="questions__item">
             <input class="questions__input" type="checkbox" id="question-3" />
-            <label class="questions__label" for="question-3">What is the speed of crediting and withdrawing funds?</label>
+            <label class="questions__label" for="question-3">
+              Quels sont les bonus et promotions disponibles pour les nouveaux joueurs sur le Bruno Casino ?
+            </label>
             <div class="questions__content">
-              Nine Casino offers many ways to top up your account: credit and debit cards, e-wallets, bank transfers and others.
-              The deposit is credited instantly. The withdrawal rate depends on the selected payment method, but no more than 1
-              business day, except for bank transfer.
+              Nous sommes ravis d'accueillir les nouveaux joueurs au Bruno Casino. Lors de votre inscription, vous recevrez un
+              superbe bonus de bienvenue, ainsi que la possibilité de participer à des promotions et tournois réguliers. Restez
+              avec nous pour ne manquer aucune opportunité avantageuse.
             </div>
           </div>
           <div class="questions__item">
             <input class="questions__input" type="checkbox" id="question-4" />
-            <label class="questions__label" for="question-4">Can I opt out of the welcome bonus?</label>
+            <label class="questions__label" for="question-4">
+              Comment effectuer des dépôts et des retraits sur le Bruno Casino ?
+            </label>
             <div class="questions__content">
-              Yes, a new player can opt out of the welcome bonus. If the player uses the welcome bonus, then it will need to be
-              wagered several times to be able to withdraw the bonus amount.
+              Nous offrons de nombreuses méthodes pratiques pour déposer de l'argent sur votre compte et retirer vos gains. Vous
+              pouvez utiliser des cartes bancaires, des portefeuilles électroniques et d'autres méthodes de paiement populaires.
+              Notre équipe d'assistance est également disponible pour vous aider en cas de questions ou de difficultés.
             </div>
           </div>
           <div class="questions__item">
             <input class="questions__input" type="checkbox" id="question-5" />
-            <label class="questions__label" for="question-5">Why is Nine Casino so popular among players?</label>
+            <label class="questions__label" for="question-5">
+              Quel type de support est disponible pour les joueurs sur le Bruno Casino ?
+            </label>
             <div class="questions__content">
-              NineCasino has a modern design, a large selection of games, a high level of reliability and security. To protect
-              players' personal data, the site uses the most advanced encryption technologies and other security measures.
+              Nous sommes fiers de fournir un service client de qualité à nos joueurs. Notre équipe d'assistance est disponible 24
+              heures sur 24, 7 jours sur 7, pour répondre à vos questions et vous aider en toutes circonstances. Vous pouvez nous
+              contacter par chat, e-mail ou téléphone - nous sommes toujours prêts à vous aider avec plaisir.
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="content">
-      <div class="container">
-        <div class="content__inner" id="Reviews">
-          <h2>Reviews</h2>
-          <div class="comments__item">
-            <div class="comments__info">
-              <p class="comments__name">Oliver 17.08.2023</p>
-              <span class="comments__star">
-                <span class="comments__star--yelov" style="width: 100%; background-image: url('images/fullrating.svg')"></span>
-              </span>
-            </div>
-            <p class="comments__text">
-              I am very happy with the betting site. It works very fast. It took me 2 years to register with Nine Casino Minutes.
-              I recommend everyone to play here.
-            </p>
-            <a class="comments__btn" href="#">Answer</a>
-          </div>
-          <div class="comments__item">
-            <div class="comments__info">
-              <p class="comments__name">Jack 16.08.2023</p>
-              <span class="comments__star">
-                <span class="comments__star--yelov" style="width: 80%; background-image: url('images/fullrating.svg')"></span>
-              </span>
-            </div>
-            <p class="comments__text">
-              A good casino site, I am always on the lookout for new offers on the Brazilian market. This is a very worthy offer,
-              very good impressions.
-            </p>
-            <a class="comments__btn" href="#">Answer</a>
-          </div>
-          <div class="comments__item">
-            <div class="comments__info">
-              <p class="comments__name">Harry 15.08.2023</p>
-              <span class="comments__star">
-                <span class="comments__star--yelov" style="width: 100%; background-image: url('images/fullrating.svg')"></span>
-              </span>
-            </div>
-            <p class="comments__text">
-              I think this site is worth a look. The design of Nine Casino is beautiful and clear. All methods popular payment
-              methods are available. There are good guys from real players.
-            </p>
-            <a class="comments__btn" href="#">Answer</a>
-          </div>
-          <div class="comments__item">
-            <div class="comments__info">
-              <p class="comments__name">Jacob 14.08.2023</p>
-              <span class="comments__star">
-                <span class="comments__star--yelov" style="width: 90%; background-image: url('images/fullrating.svg')"></span>
-              </span>
-            </div>
-            <p class="comments__text">
-              Nice bonuses, beautiful design, fast payments and professional support service! I was surprised! They can try to do
-              it!
-            </p>
-            <a class="comments__btn" href="#">Answer</a>
-          </div>
-          <div class="comments__item">
-            <div class="comments__info">
-              <p class="comments__name">Amelia 13.08.2023</p>
-              <span class="comments__star">
-                <span class="comments__star--yelov" style="width: 100%; background-image: url('images/fullrating.svg')"></span>
-              </span>
-            </div>
-            <p class="comments__text">
-              This is a cool website. Nine casinos give only positive emotions. Transactions are executed without delay. There are
-              lots of games of different genres. Excellent bonus policy. Polite technical support.
-            </p>
-            <a class="comments__btn" href="#">Answer</a>
           </div>
         </div>
       </div>
@@ -1269,18 +1594,18 @@
             <div class="footer__nav-item">
               <ul class="footer__list">
                 <li class="footer__list-item"><a href="#">Promotions</a></li>
-                <li class="footer__list-item"><a href="#">About Us</a></li>
-                <li class="footer__list-item"><a href="#">About BTC</a></li>
-                <li class="footer__list-item"><a href="#">AML Policy</a></li>
-                <li class="footer__list-item"><a href="#">Terms </a></li>
-                <li class="footer__list-item"><a href="#">Risk Warnings</a></li>
-                <li class="footer__list-item"><a href="#">Privacy Policy</a></li>
-                <li class="footer__list-item"><a href="#">Cookie Policy</a></li>
+                <li class="footer__list-item"><a href="#">A propos de nous</a></li>
+                <li class="footer__list-item"><a href="#">À propos de BTC</a></li>
+                <li class="footer__list-item"><a href="#">Politique AML</a></li>
+                <li class="footer__list-item"><a href="#">Politique de confidentialité</a></li>
+                <li class="footer__list-item"><a href="#">Avertissements sur les risques</a></li>
+                <li class="footer__list-item"><a href="#">Conditions générales</a></li>
+                <li class="footer__list-item"><a href="#">Politique de cookies</a></li>
                 <li class="footer__list-item"><a href="#">FAQ</a></li>
               </ul>
             </div>
           </nav>
-          <p class="footer__text">© nine-casino.uk. All rights reserved.</p>
+          <p class="footer__text">© bruno-casino.fr. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
